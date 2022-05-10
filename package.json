@@ -1,0 +1,22 @@
+{
+  "name": "apiexpress",
+  "version": "1.0.0",
+  "description": "Practica 3 de la Unidad 2: Aqui nos introducciremos un poco a lo que son las API´s",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdgarLoya/IntroduccionApi.git"
+  },
+  "author": "Edgar Loya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdgarLoya/IntroduccionApi/issues"
+  },
+  "homepage": "https://github.com/EdgarLoya/IntroduccionApi#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
