@@ -13,4 +13,13 @@ const routes = app => {
             response.send(result);
         });
     });
+    app.get('/users/:idusers', (request, response) =>{
+        const idusers = request.params.idusers;
+
+        pool.query('SELECT * FROM users WHERE idusers = ?', idusers, (error, result) =>{
+            if (error) throw error;
+
+            response.send(result);
+        });
+    });
 }
