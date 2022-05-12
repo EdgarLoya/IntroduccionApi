@@ -1,3 +1,4 @@
+
 const mysql = require ('mysql');
 
 const config = {
@@ -8,5 +9,5 @@ const config = {
 };
 
 const pool = mysql.createPool(config);
-
+//exportar modulo
 module.exports = pool;
