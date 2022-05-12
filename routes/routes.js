@@ -29,4 +29,13 @@ const routes = app => {
             response.status(201).send(`User added with ID: ${result.insertId}`);
         });
     });
+    app.put('users/:idusers', (request, response) =>{
+        const idusers = request.params.idusers;
+
+        pool.query('UPDATE users SET ? WHERE idusers = ?', [request.body, idusers], (error, result) => {
+            if (error) throw error;
+
+            response.send('User was updated successfully.');
+        });
+    });
 }
