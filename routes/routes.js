@@ -38,4 +38,14 @@ const routes = app => {
             response.send('User was updated successfully.');
         });
     });
+    app.delete('/users/:idusers', (request, response) => {
+        const idusers = request.params.idusers;
+
+        pool.query('DELETE FROM users WHERE idusers = ?', idusers, (error, result) => {
+            if(error) throw error;
+            response.send('User was deleted')
+        });
+    });
 }
+
+module.exports = routes;
